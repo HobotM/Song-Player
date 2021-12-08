@@ -65,4 +65,18 @@
       background-color: var(--wine-red);
   }
   
-  
+  @keyframes ring {
+    0% { transform: rotate(-20deg); }
+    100% { transform: rotate(20deg); }
+  }
+
+
+
+  .animate {
+    display: inline-block;
+    animation-name: ring;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-origin: top center;
+}
